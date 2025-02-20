@@ -1,0 +1,17 @@
+/* Style Nav */
+
+nav {
+  background-color: #5bca65;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 8px;
+}
