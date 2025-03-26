@@ -1,0 +1,31 @@
+#menu li {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 50px;
+  width: 250px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: brown;
+  color: white;
+}
+
+#menu li button {
+  background-color: greenyellow;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: lightgray;
+}
+
+th {
+  background-color: brown;
+  color: white;
+}
+
+td,
+th {
+  border: 2px solid black;
+  padding: 4px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midterm</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Restaurant Menu</h1>
+    <p>
+      You have been hired by a local restaurant to develop an online ordering
+      system for customers. The restaurant's menu is listed below. You must show
+      all of the menu items and give customers a way to add them to the cart.
+      After adding an item, customers should be able to remove specific items or
+      add a special request. The special request should be able to change as
+      needed. The owner has tasked you will tracking one more piece of
+      information about the items in cart to help them properly prepare the
+      order.
+    </p>
+
+    <h2>Menu</h2>
+    <ul id="menu"></ul>
+
+    <h2>Cart</h2>
+    <table>
+      <tbody id="cart">
+        <tr>
+          <th>Item Name</th>
+          <th>Price</th>
+          <th>Special Request</th>
+          <th>Actions</th>
+        </tr>
+        <tr id="no-items">
+          <td colspan="4">No items in cart</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
