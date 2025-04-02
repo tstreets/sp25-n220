@@ -3,6 +3,8 @@ const loginFormRef = document.querySelector("#login");
 const usernameRef = document.querySelector("#username");
 const passwordRef = document.querySelector("#password");
 
+let activeUser = JSON.parse(localStorage.getItem("activeUser") || "{}");
+
 function loginUser(e) {
   e.preventDefault();
 
@@ -30,6 +32,10 @@ function loginUser(e) {
     // make user
     users.push({ username: usernameValue, password: passwordValue });
     localStorage.setItem("users", JSON.stringify(users));
+    alert("New user created");
+
+    activeUser = { username: usernameValue };
+    localStorage.setItem("activeUser", JSON.stringify(activeUser));
   }
   // You put the wrong password
   else if (correctPassword === false) {
@@ -38,9 +44,21 @@ function loginUser(e) {
   // You are logged in
   else {
     alert("Successfully logged in");
+
+    activeUser = { username: usernameValue };
+    localStorage.setItem("activeUser", JSON.stringify(activeUser));
   }
 
-  console.log(users);
+  toggleLogin();
+}
+
+function toggleLogin() {
+  if (!activeUser.username) {
+    loginFormRef.style.display = "block";
+  } else {
+    loginFormRef.style.display = "none";
+  }
 }
 
 loginFormRef.onsubmit = loginUser;
+toggleLogin();
