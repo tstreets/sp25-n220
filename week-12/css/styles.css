@@ -17,3 +17,15 @@ nav a {
 nav a:visited {
   color: brown;
 }
+
+button {
+  padding: 8px;
+  background-color: brown;
+  color: white;
+  border-radius: 40px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
