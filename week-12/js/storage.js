@@ -3,6 +3,9 @@ const loginFormRef = document.querySelector("#login");
 const usernameRef = document.querySelector("#username");
 const passwordRef = document.querySelector("#password");
 
+const contentRef = document.querySelector("#content");
+const logoutRef = document.querySelector("#logout");
+
 let activeUser = JSON.parse(localStorage.getItem("activeUser") || "{}");
 
 function loginUser(e) {
@@ -55,10 +58,21 @@ function loginUser(e) {
 function toggleLogin() {
   if (!activeUser.username) {
     loginFormRef.style.display = "block";
+    contentRef.style.display = "none";
   } else {
     loginFormRef.style.display = "none";
+    contentRef.style.display = "block";
   }
 }
 
+function logoutUser() {
+  localStorage.removeItem("activeUser");
+  activeUser = {};
+
+  toggleLogin();
+}
+
 loginFormRef.onsubmit = loginUser;
+logoutRef.onclick = logoutUser;
+
 toggleLogin();
