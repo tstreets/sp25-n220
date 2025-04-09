@@ -4,13 +4,15 @@
     "roman": "Sol",
     "latin": "Sol",
     "greek": "Helios",
-    "greekLetters": "ἥλιος"
+    "greekLetters": "ἥλιος",
+    "galaxy": "Milky Way"
   },
   {
     "current": "Sun 2",
     "roman": "Sol 2",
     "latin": "Sol 2",
     "greek": "Helios 2",
-    "greekLetters": "ἥλιος 2"
+    "greekLetters": "ἥλιος 2",
+    "galaxy": "Waky Milk"
   }
 ]

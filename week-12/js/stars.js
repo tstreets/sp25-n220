@@ -14,9 +14,11 @@ async function getStars() {
     for (let i = 0; i < starsData.length; i++) {
       const currentStar = starsData[i];
 
-      starsListRef.innerHTML += `<li>
-            ${currentStar.current} <i>(${currentStar.latin})</i>
-        </li>`;
+      if (currentStar.galaxy === "Waky Milks") {
+        starsListRef.innerHTML += `<li>
+        ${currentStar.current} <i>(${currentStar.latin})</i>
+    </li>`;
+      }
     }
   } catch (e) {
     console.warn(e);
