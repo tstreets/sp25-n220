@@ -1,0 +1,5 @@
+[
+  { "name": "Watermelon", "image": "images/watermelon.webp" },
+  { "name": "Cantaloupe", "image": "images/cantaloupe.jpg" },
+  { "name": "Honeydew", "image": "images/honeydew.jpg" }
+]

@@ -1,0 +1,22 @@
+#bench {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+}
+
+#daycare {
+  border: 1px solid black;
+  min-height: 300px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
